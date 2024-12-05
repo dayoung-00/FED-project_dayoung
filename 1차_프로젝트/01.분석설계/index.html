@@ -4,32 +4,77 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>김다영 1차 PJ 제네시스</title>
+    <!-- 폰트어썸 CDN CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!-- 1.상단영역 -->
     <div id="top-area">
       <header class="top-area inbox">
-        <h2 class="temp-tit">1.상단영역</h2>
         <!-- 파티션박스 -->
-         <div class="cont-box">
+        <div class="cont-box">
           <div class="col-12">
-            <ul>
+            <ul class="top-part-box">
+              <!-- 로고파트 -->
               <li>
-                <a href="#">
-                  <img src="./images/main_logo.png" alt="main logo">
-
-                </a>
+                <h1 class="logo">
+                  <a href="#">
+                    <img src="./images/main_logo.png" alt="main logo" />
+                  </a>
+                </h1>
               </li>
+              <!-- 메뉴파트 -->
               <li>
-                
+                <nav class="gnb">
+                  <ul>
+                    <li>
+                      <a href="#">모델</a>
+                    </li>
+                    <li>
+                      <a href="#">구매</a>
+                    </li>
+                    <li>
+                      <a href="#">체험</a>
+                    </li>
+                    <li>
+                      <a href="#">멤버스</a>
+                    </li>
+                    <li>
+                      <a href="#">제네시스</a>
+                    </li>
+                  </ul>
+                </nav>
               </li>
+              <!-- 추가메뉴파트 -->
               <li>
-                
+                <nav class="etc-menu">
+                  <ul>
+                    <li>
+                      <a href="#">고객센터</a>
+                    </li>
+                    <li>
+                      <a href="#">마이페이지</a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-bars"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
               </li>
             </ul>
           </div>
-         </div>
+        </div>
       </header>
     </div>
     <!-- 2.컨텐츠영역 -->
@@ -61,7 +106,7 @@
           <div class="col-2"></div>
           <div class="col-8"></div>
           <div class="col-2"></div>
-         </div>
+        </div>
       </footer>
     </div>
   </body>

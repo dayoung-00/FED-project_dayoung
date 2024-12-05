@@ -6,6 +6,10 @@
 html{
     font-size: 10px;
 }
+body{
+    background-color: #222;
+    color: #fff;
+}
 /* 기본 초기화 */
 html,
 body,
@@ -34,7 +38,7 @@ ul,ol{
 
 /* a요소 리셋 */
 a{
-    color: #222;
+    color: #fff;
     text-decoration: none;
 }
 
