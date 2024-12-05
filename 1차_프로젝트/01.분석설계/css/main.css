@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/* 레이아웃 3 CSS */
+
+/* 외부CSS 불러오기 */
+/* 12그리드 flex CSS */
+@import url(./grid_12_flex.css);
+@import url(./common.css);
+@import url(./reset.css);
+@import url(./core.css);
+
+
+
+/* 공사중표시 */
+/* body * {
+    outline: 2px dashed red;
+} */
+
+/************* 2.컨텐츠영역 *************/
+.page{
+    /* 영역별로 모두 보이는 화면 높이 설정 */
+    height: 100vh;
+    outline: 1px dashed gray;
+}
+/* 임시타이틀 */
+.page .temp-tit{
+    font-size: 4vw;
+    line-height: 100vh;
+    width: 100%;
+    text-align: center;
+}
