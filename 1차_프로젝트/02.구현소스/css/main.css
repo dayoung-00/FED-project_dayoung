@@ -213,4 +213,7 @@ background-size: cover;
   .preview-box li:hover p {
     color: #000;
   }
+  .preview-area ol img{
+    width: 200px;
+  }
   
