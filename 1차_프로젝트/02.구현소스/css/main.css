@@ -9,211 +9,242 @@
 @import url(./reset.css);
 @import url(./core.css);
 
-
-
 /* 공사중표시 */
 /* body * {
     outline: 2px dashed red;
 } */
 
 /************* 2.컨텐츠영역 *************/
-.page{
-    /* 영역별로 모두 보이는 화면 높이 설정 */
-    height: 100vh;
-    outline: 1px dashed gray;
+.page {
+  /* 영역별로 모두 보이는 화면 높이 설정 */
+  height: 100vh;
+  outline: 1px dashed gray;
 }
 /* 임시타이틀 */
-.page .temp-tit{
-    font-size: 4vw;
-    line-height: 100vh;
-    width: 100%;
-    text-align: center;
+.page .temp-tit {
+  font-size: 4vw;
+  line-height: 100vh;
+  width: 100%;
+  text-align: center;
 }
-
 
 #container {
-    /*최상위부모*/
-    position: relative;
+  /*최상위부모*/
+  position: relative;
 }
 
-#container>header {
-    position: relative;
-    width: 100%;
-    height: 222px;
+#container > header {
+  position: relative;
+  width: 100%;
+  height: 222px;
 }
 
-#container>section {
-    /*슬라이드부모*/
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-    /*넘치는 자식요소 숨기기*/
-    /*    border: 2px solid red;*/
-    box-sizing: border-box;
+#container > section {
+  /*슬라이드부모*/
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  /*넘치는 자식요소 숨기기*/
+  /*    border: 2px solid red;*/
+  box-sizing: border-box;
 }
 /* 슬라이드 박스 */
 ul.slide {
-    display: flex;
-    /* 플렉스박스!!! */
+  display: flex;
+  /* 플렉스박스!!! */
 
-    /*사진을 싸고 있는 슬라이드*/
-    /* -> 앱솔루트나 렐러티브는 left값을 사용가능
+  /*사진을 싸고 있는 슬라이드*/
+  /* -> 앱솔루트나 렐러티브는 left값을 사용가능
     -> 요즘은 translate를 많이사용함!
     position: absolute;
     top: 0;
     left: 0; */
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .slide li {
-    flex-shrink: 0;
-    /* 부모박스크기만큼 줄어들지 않음 -> 0 */
-    flex-basis: 100%;
-    /* 가로크기를 부모박스 크기에 맞춤! */
-    /* height 값은 flex박스 자식요소에서
+  flex-shrink: 0;
+  /* 부모박스크기만큼 줄어들지 않음 -> 0 */
+  flex-basis: 100%;
+  /* 가로크기를 부모박스 크기에 맞춤! */
+  /* height 값은 flex박스 자식요소에서
     등분할시 자동 100%임! */
 }
 
 .slide li img {
-    /*이미지는 박스에 맞춤!*/
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* 이미지 비율유지 채우기! */
+  /*이미지는 박스에 맞춤!*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 이미지 비율유지 채우기! */
 }
 
 /*이동버튼*/
 .abtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    /*Y축 중앙이동*/
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /*Y축 중앙이동*/
 }
 
 /* 슬라이드 사진영역 */
-.slide ul{
-height: 100%;
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
+.slide ul {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* 슬라이드 텍스트 */
-.ban-txt{
-    position: absolute;
-    top: 20vh;
-    left: 10vw;
-    color: #fff;
-    white-space: nowrap;
-    
-    font-family: "Roboto Flex", sans-serif;
+.ban-txt {
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  color: #fff;
+  white-space: nowrap;
+
+  font-family: "Roboto Flex", sans-serif;
 }
 /* 글자는 처음에 바깥에 나가있음 */
-.ban-txt .bt{ 
-    position: absolute;
-    top: 0;
-    translate: -1000%;
-    transition: .6s ease-out .2s;
+.ban-txt .bt {
+  position: absolute;
+  top: 0;
+  translate: -1000%;
+  transition: 0.6s ease-out 0.2s;
 }
 /* 해당순번에 on넣으면 등장 */
-.ban-txt .bt.on{ 
-    translate: 0;
+.ban-txt .bt.on {
+  translate: 0;
 }
-.ban-txt span{
-    display: block;
-    font-size: 1vw;
-    text-indent: 10px;
+.ban-txt span {
+  display: block;
+  font-size: 1vw;
+  text-indent: 10px;
 }
-.ban-txt h2{
-    font-weight: normal;
-    font-size: 4vw;
-
+.ban-txt h2 {
+  font-weight: normal;
+  font-size: 4vw;
 }
-
 
 /*왼쪽버튼*/
 .ab1 {
-    left: 50px;
+  left: 50px;
 }
 
 /*오른쪽버튼*/
 .ab2 {
-    right: 50px;
+  right: 50px;
 }
 
 /*블릿버튼*/
 .indic {
-    display: flex;
-    /* 플렉스박스 */
-    position: absolute;
-    bottom: 50px;
-    left: 80px;
+  display: flex;
+  /* 플렉스박스 */
+  position: absolute;
+  bottom: 50px;
+  left: 80px;
 }
 
 .indic li {
-    width: 16px;
-    height: 16px;
-    cursor: pointer;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
 }
 
 .indic li img {
-    position: absolute;
-    /*이미지 겹치게*/
+  position: absolute;
+  /*이미지 겹치게*/
 }
 
 .indic li img:last-child {
-    /*회색이미지만 투명하게*/
-    opacity: 0;
+  /*회색이미지만 투명하게*/
+  opacity: 0;
 }
 
 /*회색블릿이미지가 보이게하는 class*/
 .indic li.on img:last-child {
-    /*회색이미지만 투명하게*/
-    opacity: 1;
-    /*우선적용!*/
+  /*회색이미지만 투명하게*/
+  opacity: 1;
+  /*우선적용!*/
 }
 
 /***************** THE AWARDS 영역 *****************/
-.preview-area{
-    height: auto;
+/* 모델 부모박스 */
+#model-area {
+    position: relative;
+    overflow: hidden;
+    padding: 50px 0;
 }
-.preview-box{
-    flex-basis: calc(100%/3-15px);
-    padding: 24px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 0 10px #22222240;
-    box-sizing: border-box;
+.model-area {
+  height: auto;
+}
+.model-box {
+    width: 800px;
+}
+/* 모델선택 콤보박스 */
+select#model-choice{
+    width: 200px;
+    height: 50px;
+    background-color: #222;
+    color: #fff;
+    font-size: 20px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 /* 리스트 타이틀 */
-.preview-box li h3 {
-    font-size: 2rem;
-    color: #000;
-    font-weight: normal;
-  }
-  /* 리스트 내용 */
-  .preview-box li p {
-    font-size: 1.5rem;
-    margin-top: 1.4rem;
-    color: #00000099;
-    line-height: 1.7;
-  
-    /* 여러줄 말줄임표시 셋팅하기 */
-    display: -webkit-box;
-    overflow: hidden;
-    /* 말줄임표시 */
-    text-overflow: ellipsis;
-    /* 보여줄 라인수 셋팅속성 */
-    -webkit-line-clamp: 7;
-    /* 라인진행방향 셋팅 */
-    -webkit-box-orient: vertical;
-  }
-  /* 리스트박스 오버시 내용글자색 */
-  .preview-box li:hover p {
-    color: #000;
-  }
-  .preview-area ol img{
-    width: 200px;
-  }
-  
+.model-box li h3 {
+  font-size: 2rem;
+  color: #000;
+  font-weight: normal;
+}
+/* 스와이퍼 디자인 */
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 스와이퍼 디자인 리뉴얼 */
+/* 블릿 */
+.swiper-pagination-bullet{
+    background-color: #fff;
+    vertical-align: middle;
+}
+.swiper-pagination-bullet-active{
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0 10px;
+
+}
+
+/* 정보 아이콘 영역 */
+.info-icon{
+    display: flex;
+    justify-content: center;
+    padding: 10vh;
+    gap: 10vw;
+}
+.info-icon figure{
+    display: flex;
+    flex-direction: column;
+}
+.info-icon figure img{
+    width: 80px;
+}
+/* 아이콘 캡션 */
+.info-icon figcaption{
+    padding: 10px 0;
+    text-align: center;
+    font-size: 15px;
+}
+

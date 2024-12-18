@@ -8,9 +8,23 @@
 /* 중앙속박스 */
 .inbox{
     /* 최대가로크기 */
-    max-width: 1920px;
+    max-width: 1446px;
     /* 블록박스 중앙정렬 -> 마.영.오! */
     margin: 0 auto;    
+}
+
+/* 중간제목 공통 */
+.stit{
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: normal;
+    font-size: min(40px, 4vw);
+}
+/* 하위설명공통 */
+hgroup h3{
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: normal;
+    font-size: min(15px, 4vw);
+    padding: 10px 0;
 }
 
 /* 임시 타이틀 */

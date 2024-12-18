@@ -9,7 +9,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
+    
+    <!-- 스와이퍼 CDN CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 메인 JS 불러오기 -->
     <script type="module" src="./js/main.js"></script>
   </head>
@@ -80,240 +86,270 @@
       </header>
     </div>
     <!-- 2.컨텐츠영역 -->
-    <div id="cont-area">
-      <main class="cont-area inbox">
-        <section class="page">
-          <h2 class="temp-tit">메인</h2>
-          <!-- 메인 사진영역(슬라이드) -->
-          <section id="container">
-            <section class="slide-box">
-              <ul class="slide">
-                <li>
-                  <img src="./image/slide1.jpg" alt="slide" />
+    <main class="cont-area inbox">
+      <section class="page">
+        <h2 class="temp-tit">메인</h2>
+        <!-- 메인 사진영역(슬라이드) -->
+        <div id="container">
+          <aside class="slide-box">
+            <ul class="slide">
+              <li>
+                <img src="./image/slide1.jpg" alt="slide" />
+              </li>
+              <li>
+                <img src="./image/slide2.jpg" alt="slide" />
+              </li>
+              <li>
+                <img src="./image/slide3.jpg" alt="slide" />
+              </li>
+              <li>
+                <img src="./image/slide4.jpg" alt="slide" />
+              </li>
+              <li>
+                <img src="./image/slide5.jpg" alt="slide" />
+              </li>
+              <li>
+                <img src="./image/slide6.jpg" alt="slide" />
+              </li>
+              <li>
+                <img src="./image/slide7.jpg" alt="slide" />
+              </li>
+              <li>
+                <img src="./image/slide8.jpg" alt="slide" />
+              </li>
+              <li>
+                <img src="./image/slide9.jpg" alt="slide" />
+              </li>
+              <li>
+                <img src="./image/slide10.jpg" alt="slide" />
+              </li>
+            </ul>
+
+            <!-- 문구박스 -->
+            <aside class="ban-txt">
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>GENESIS MAGMA RACING</h2>
+              </div>
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>GV80 BLACK</h2>
+              </div>
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>GV80 COUPE BLACK</h2>
+              </div>
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>GV80</h2>
+              </div>
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>GV80 COUPE</h2>
+              </div>
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>ELECTRLFLED G80</h2>
+              </div>
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>MAGMA</h2>
+              </div>
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>NEOLUN CONCEPT</h2>
+              </div>
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>GV70</h2>
+              </div>
+              <div class="bt">
+                <span>GENESIS</span>
+                <h2>GV90 BLACK</h2>
+              </div>
+            </aside>
+
+            <!--이동버튼-->
+            <a href="#" class="abtn ab1">
+              <img src="./image/left_btn.png" alt="왼쪽이동버튼" />
+            </a>
+            <a href="#" class="abtn ab2">
+              <img src="./image/right_btn.png" alt="오른쪽이동버튼" />
+            </a>
+
+            <!--블릿버튼-->
+            <ol class="indic">
+              <li class="on">
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+
+              <li>
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+
+              <li>
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+
+              <li>
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+
+              <li>
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+
+              <li>
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+
+              <li>
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+
+              <li>
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+
+              <li>
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+
+              <li>
+                <img src="./image/dot1.png" alt="흰색" />
+                <img src="./image/dot2.png" alt="회색" />
+              </li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+      <section class="page">
+        <div id="model-area">
+          <!-- 모델 타이틀 -->
+           <hgroup>
+             <h2 class="stit">Our Models</h2>
+            <h3>
+              역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 제네시스 브랜드의 라인업을 살펴보세요.
+            </h3>
+           </hgroup>
+           <select name="model-choice" id="model-choice">
+            <option value="all">All</option>
+            <option value="black">BLACK</option>
+            <option value="sedan">SEDAN</option>
+            <option value="suv">SUV</option>
+           </select>
+          <div class="cont-box" id="model-box">
+            <div class="col-12 model-box">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                  <figure>
+                      <img src="./image/car_01.png" alt="car" />
+                    <figcaption>차설명</figcaption>
+                  </figure>
                 </li>
-                <li>
-                  <img src="./image/slide2.jpg" alt="slide" />
+                <li class="swiper-slide">
+                  <figure>
+                    <figcaption>차설명</figcaption>
+                      <img src="./image/car_02.png" alt="car" />
+                      <button>자세히보기</button>
+                  </figure>
                 </li>
-                <li>
-                  <img src="./image/slide3.jpg" alt="slide" />
+                <li class="swiper-slide">
+                  <figure>
+                      <img src="./image/car_03.png" alt="car" />
+                    <figcaption>차설명</figcaption>
+                  </figure>
                 </li>
-                <li>
-                  <img src="./image/slide4.jpg" alt="slide" />
+                <li class="swiper-slide">
+                  <figure>
+                      <img src="./image/car_04.png" alt="car" />
+                    <figcaption>차설명</figcaption>
+                  </figure>
                 </li>
-                <li>
-                  <img src="./image/slide5.jpg" alt="slide" />
+                <li class="swiper-slide">
+                  <figure>
+                      <img src="./image/car_05.png" alt="car" />
+                    <figcaption>차설명</figcaption>
+                  </figure>
                 </li>
-                <li>
-                  <img src="./image/slide6.jpg" alt="slide" />
+                <li class="swiper-slide">
+                  <figure>
+                      <img src="./image/car_06.png" alt="car" />
+                    <figcaption>차설명</figcaption>
+                  </figure>
                 </li>
-                <li>
-                  <img src="./image/slide7.jpg" alt="slide" />
+                <li class="swiper-slide">
+                  <figure>
+                      <img src="./image/car_07.png" alt="car" />
+                    <figcaption>차설명</figcaption>
+                  </figure>
                 </li>
-                <li>
-                  <img src="./image/slide8.jpg" alt="slide" />
+                <li class="swiper-slide">
+                  <figure>
+                      <img src="./image/car_08.png" alt="car" />
+                    <figcaption>차설명</figcaption>
+                  </figure>
                 </li>
-                <li>
-                  <img src="./image/slide9.jpg" alt="slide" />
-                </li>
-                <li>
-                  <img src="./image/slide10.jpg" alt="slide" />
+                <li class="swiper-slide">
+                  <figure>
+                      <img src="./image/car_09.png" alt="car" />
+                    <figcaption>차설명</figcaption>
+                  </figure>
                 </li>
               </ul>
-
-              <!-- 문구박스 -->
-              <aside class="ban-txt">
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>GENESIS MAGMA RACING</h2>
-                </div>
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>GV80 BLACK</h2>
-                </div>
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>GV80 COUPE BLACK</h2>
-                </div>
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>GV80</h2>
-                </div>
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>GV80 COUPE</h2>
-                </div>
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>ELECTRLFLED G80</h2>
-                </div>
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>MAGMA</h2>
-                </div>
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>NEOLUN CONCEPT</h2>
-                </div>
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>GV70</h2>
-                </div>
-                <div class="bt">
-                  <span>GENESIS</span>
-                  <h2>GV90 BLACK</h2>
-                </div>
-              </aside>
-
-              <!--이동버튼-->
-              <a href="#" class="abtn ab1">
-                <img src="./image/left_btn.png" alt="왼쪽이동버튼" />
-              </a>
-              <a href="#" class="abtn ab2">
-                <img src="./image/right_btn.png" alt="오른쪽이동버튼" />
-              </a>
-
-              <!--블릿버튼-->
-              <ol class="indic">
-                <li class="on">
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-
-                <li>
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-
-                <li>
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-
-                <li>
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-
-                <li>
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-
-                <li>
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-
-                <li>
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-
-                <li>
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-
-                <li>
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-
-                <li>
-                  <img src="./image/dot1.png" alt="흰색" />
-                  <img src="./image/dot2.png" alt="회색" />
-                </li>
-              </ol>
-            </section>
-          </section>
-        </section>
-        <section class="page">
-          <div id="preview-area">
-            <!-- stit -->
-            <h2 class="blind">THE AWARDS</h2>
-            <div class="cont-box">
-              <div class="col-12 preview-box">
-                <ul class="fx-box" data-db="previewData">
-                  <li>
-                    <ol>
-                      <li>
-                        <img src="./image/car_01.png" alt="car" />
-                      </li>
-                      <li>차설명</li>
-                    </ol>
-                  </li>
-                  <li>
-                    <ol>
-                      <li>
-                        <img src="./image/car_01.png" alt="car" />
-                      </li>
-                      <li>차설명</li>
-                    </ol>
-                  </li>
-                  <li>
-                    <ol>
-                      <li>
-                        <img src="./image/car_01.png" alt="car" />
-                      </li>
-                      <li>차설명</li>
-                    </ol>
-                  </li>
-                </ul>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
-        </section>
-        <section class="page">
-          <h2 class="temp-tit">GENESIS EVENTS</h2>
-        </section>
-        <section class="page">
-          <h2 class="temp-tit">연관컨텐츠</h2>
-        </section>
-        <section class="page">
-          <h2 class="temp-tit">하단영역</h2>
+        </div>
+        <!-- 안내 아이콘 박스 -->
+         <aside class="info-icon">
+          <figure>
+            <img src="./image/info_icon01.gif" alt="견적내기">
+            <figcaption>견적내기</figcaption>
+          </figure>
+          <figure>
+            <img src="./image/info_icon02.gif" alt="구매 상담 신청">
+            <figcaption>구매 상담 신청</figcaption>
+          </figure>
+          <figure>
+            <img src="./image/info_icon03.gif" alt="시승 신청">
+            <figcaption>시승 신청</figcaption>
+          </figure>
+          <figure>
+            <img src="./image/info_icon04.gif" alt="카탈로그">
+            <figcaption>카탈로그</figcaption>
+          </figure>
+         </aside>
+      </section>
+      <section class="page">
+        <h2 class="stit">THE AWARDS</h2>
+        <!-- https://swiperjs.com/demos#effect-creative -->
+      </section>
+      <section class="page">
+        <h2 class="temp-tit">GENESIS EVENTS</h2>
 
-          <header class="bottom-area inbox">
-            <!-- 파티션박스 -->
-            <div class="cont-box">
-              <div class="col-12">
-                <div class="bottom-part-box">
-                  <!-- 메뉴파트 -->
-                  <nav class="gnb">
-                    <ul>
-                      <li>
-                        <a href="#">모델</a>
-                      </li>
-                      <li>
-                        <a href="#">구매</a>
-                      </li>
-                      <li>
-                        <a href="#">체험</a>
-                      </li>
-                      <li>
-                        <a href="#">멤버스</a>
-                      </li>
-                      <li>
-                        <a href="#">제네시스</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </header>
-        </section>
-      </main>
-    </div>
+      </section>
+      <section class="page">
+        <h2 class="temp-tit">연관컨텐츠</h2>
+      </section>
+      <section class="page">
+        <h2 class="temp-tit">하단영역</h2>
+      </section>
+    </main>
     <!-- 4.하단영역 -->
     <div id="footer-area">
       <footer class="footer-area inbox">
         <h2 class="temp-tit">4.하단영역</h2>
-        <!-- 파티션박스 -->
-        <div class="cont-box">
-          <div class="col-2"></div>
-          <div class="col-8"></div>
-          <div class="col-2"></div>
-        </div>
+        
       </footer>
     </div>
   </body>

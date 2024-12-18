@@ -6,3 +6,13 @@ import slideFn from "./slide_fn.js";
 // console.log(slideFn);
 // 슬라이드함수 호출하여 실행하기
 slideFn();
+
+var swiper = new Swiper(".model-box", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+

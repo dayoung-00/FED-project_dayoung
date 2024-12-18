@@ -10,6 +10,10 @@ body{
     background-color: #222;
     color: #fff;
 }
+/* 가로스크롤 방지 */
+html,body{
+    overflow-x: hidden;
+}
 /* 기본 초기화 */
 html,
 body,
