@@ -259,3 +259,15 @@ select#model-choice{
 .page figure img{
   width: 100%;
 }
+
+/* 뉴스 정보 영역 */
+.news-box figcaption{
+  font-size: 16px;
+
+}
+.news-box span{
+  font-size: 26px;
+}
+.news-box p{
+  font-size: 14px;
+}
