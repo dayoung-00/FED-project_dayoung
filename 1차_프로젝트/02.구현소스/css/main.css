@@ -247,4 +247,15 @@ select#model-choice{
     text-align: center;
     font-size: 15px;
 }
+/* 뉴스영역 */
+.news-box{
+  display: flex;
+}
 
+/* 뉴스영역 캡션 */
+
+
+/* 이벤트 영역 */
+.page figure img{
+  width: 100%;
+}
