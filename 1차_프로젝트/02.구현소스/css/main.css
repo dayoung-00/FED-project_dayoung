@@ -271,3 +271,15 @@ select#model-choice{
 .news-box p{
   font-size: 14px;
 }
+
+/* 연관컨텐츠 영역 */
+.cts-box{
+  display: flex;
+}
+.cts-box h1{
+  font-size: 26px;
+}
+.cts-box figcaption{
+  font-size: 14px;
+
+}
