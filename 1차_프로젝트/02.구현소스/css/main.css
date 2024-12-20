@@ -259,6 +259,9 @@ select#model-choice{
 .page figure img{
   width: 100%;
 }
+.page hgroup{
+  position: absolute;
+}
 
 /* 뉴스 정보 영역 */
 .news-box figcaption{
@@ -298,4 +301,8 @@ select#model-choice{
   height: 100%;
   background-size: cover;
   filter: blur(3px)
+}
+
+.evt-box  {
+display: flex;
 }
