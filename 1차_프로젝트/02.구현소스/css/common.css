@@ -4,7 +4,8 @@
 
 
 /************* 1.상단영역 *************/
-.top-area{
+/* 최상위 박스 바깥부모박스 */
+#top-area{
     position: fixed;
     top: 0;
     left: 0;
