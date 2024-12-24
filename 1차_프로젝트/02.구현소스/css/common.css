@@ -18,7 +18,9 @@
     /* 패딩포함박스 */
     box-sizing: border-box;
 }
-
+ul{
+    list-style-type: none;
+}
 /* 상단영역 플렉스 박스 */
 ul.top-part-box{
     display: flex;

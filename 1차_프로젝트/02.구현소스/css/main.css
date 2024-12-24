@@ -389,6 +389,18 @@ select#model-choice {
   display: flex;
   gap: 2vw;
 }
+.evt-inbox figcaption {
+margin-top: 20px;
+font-size: 18px;
+}
+.evt-inbox span {
+font-size: 14px;
+}
+.evt-inbox p {
+font-size: 14px;
+
+}
+
 
 /* 다운로드 영역 */
 .bt-box {
@@ -399,4 +411,9 @@ select#model-choice {
 }
 .bt-box span {
   font-size: 14px;
+}
+/* 하단로고 */
+.logo-1{
+  margin-top: 50px;
+  text-align: center;
 }
