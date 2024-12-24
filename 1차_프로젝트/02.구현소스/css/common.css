@@ -35,22 +35,25 @@ ul.top-part-box>li:nth-child(3){
 }
 /* GNB */
 .gnb{
+    white-space: nowrap;
     height: 100%;
 }
 .gnb ul{
     display: flex;
     line-height: 48px;
     font-size: 1.6rem;    
-    gap: 60px;
+    gap:5vw;
     margin-left: 80px;
 }
 
 /* 기타메뉴 */
 .etc-menu ul{
+    white-space: nowrap;
     display: flex;
     line-height: 48px;
     font-size: 1.6rem;    
-    gap: 60px;
+    gap: 5vw;
+    padding-left: 10vw;
 }
 
 /************************************/
@@ -58,5 +61,5 @@ ul.top-part-box>li:nth-child(3){
 
 /************* 2.하단영역 *************/
 .footer-area{
-    height: 100px;
+    /* height: 100px; */
 }
