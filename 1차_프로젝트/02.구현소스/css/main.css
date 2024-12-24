@@ -306,3 +306,15 @@ select#model-choice{
 .evt-box  {
 display: flex;
 }
+
+
+/* 다운로드 영역 */
+.bt-box{
+  display: flex;
+}
+.bt-box figcaption{
+  font-size: 26px;
+}
+.bt-box span{
+  font-size: 14px;
+}
