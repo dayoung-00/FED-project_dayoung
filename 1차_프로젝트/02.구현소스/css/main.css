@@ -22,7 +22,7 @@ body {
 .page {
   /* 영역별로 모두 보이는 화면 높이 설정 */
   /* height: 100vh; */
-  outline: 1px dashed gray;
+  /* outline: 1px dashed gray; */
   margin-top: 5vh;
 }
 /* 임시타이틀 */
