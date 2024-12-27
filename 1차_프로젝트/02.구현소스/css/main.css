@@ -131,6 +131,10 @@ ul.slide {
   font-weight: normal;
   font-size: 4vw;
 }
+.ban-txt a {
+  font-weight: normal;
+  font-size: 1vw;
+}
 
 /*왼쪽버튼*/
 .ab1 {
