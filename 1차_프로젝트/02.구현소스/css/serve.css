@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+/* 제네시스 PJ : main.css */
+
+/* 외부CSS 불러오기 */
+/* 12그리드 flex CSS */
+@import url(./grid_12_flex.css);
+@import url(./common.css);
+@import url(./reset.css);
+@import url(./core.css);
+
+/* 네비게이션 바
+.nvb{
+    position: fixed;
+    background-color: #222;
+    box-shadow: 0 5px 5px #00000076;
+    width: 100%;
+    height: 69px;
+    padding: 0 7.6rem;
+    display: flex;
+    justify-content: space-between; 요소 간의 공간을 균등 배분
+    align-items: center; 요소를 수직 중앙에 정렬
+} */
+
+/* 네비게이션 바 */
+.nvb {
+    position: fixed; /* 고정 위치 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 전체 너비 */
+    background-color: #222; /* 배경 색 */
+    padding: 0 2rem; /* 좌우 여백 */
+    box-shadow: 0 5px 5px #00000076; /* 그림자 */
+    display: flex; /* Flexbox로 설정 */
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center; /* 세로 방향 중앙 정렬 */
+    z-index: 1000; /* 다른 요소 위로 올라오도록 */
+}
+
+/* 메뉴 리스트 */
+.nvb ul {
+    list-style: none; /* 기본 점 제거 */
+    display: flex; /* Flexbox로 설정 */
+    margin: 0; /* 외부 여백 제거 */
+    padding: 0; /* 내부 여백 제거 */
+}
+
+/* 메뉴 항목 */
+.nvb ul li {
+    margin: 0 1rem; /* 항목 간 간격 */
+}
+
+/* 메뉴 링크 */
+.nvb ul li a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: white; /* 글자 색상 */
+    font-size: 1rem; /* 글자 크기 */
+    font-weight: bold; /* 글자 두께 */
+    transition: color 0.3s ease; /* 색상 전환 효과 */
+}
+
+.nvb ul li a:hover {
+    color: #ff9800; /* 호버 시 색상 변경 */
+}
