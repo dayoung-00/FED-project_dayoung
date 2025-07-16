@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project_01</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arail',sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .inner {
+            width: 1200px;
+            margin: auto;
+            height: 1080px;
+            background: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0,1);
+        }
+        header {
+            height: 200px;
+            background: linear-gradient(135deg,#4CAF50,#2E7D32);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0,2);
+        }
+        .content:after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .side {
+            background: #f8f9fa;
+            width: 338px;
+            height: 679px;
+            float: left;
+            padding: 30px;
+            border-right: 1px solid #e9ecef;
+        }
+        .con {
+            background: #ffffff;
+            height: 679px;
+            width: 862px;
+            float: left;
+            padding: 40px;
+        }
+        footer {
+            background: #343a40;
+            height: 200px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+        .side h2, .con h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .side ul {
+            list-style: none;
+        }
+        .side ul li {
+            padding: 12px 0;
+            border-bottom: 1px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        .side ul li:hover {
+            padding-left: 10px;
+            color: #4CAF50;
+            cursor: pointer;
+        }
+        .con p {
+            margin-bottom: 20px;
+            color: #666;
+            line-height: 1.8;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #2E7D32;
+        }
+       
+        </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="inner">
+            <header>Welcome to My Website</header>
+            <div class="contents">
+                <aside class="side">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Portfolio</li>
+                        <li>Contect</li>
+                    </ul>
+                </aside>
+                <article class="con">
+                    <h1>Welcome to Our Website</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur clit. Sed do diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enm ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                    <p>Duis aute irure dolor inreprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                    <a href="#" class="button">Learn More</a>
+                </article>
+            </div>
+            <footer>2025 My Website.</footer>
+        </div>
+    </div>
+</body>
+</html>
