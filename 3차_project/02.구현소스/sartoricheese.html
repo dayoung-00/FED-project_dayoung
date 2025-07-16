@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sartoricheese</title>
+</head>
+<style>
+        body {
+        background-color: #fff;
+        color: #362204;
+        font-family: "Signifier", "Helvetica Neue", sans-serif;
+        letter-spacing: .05em;
+        line-height: 1;
+        margin: 0;
+        touch-action: manipulation;
+        vertical-align: baseline;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+    header {
+        background: #fef8de;
+        border-bottom: 1px solid transparent;
+        border-top: 1px solid transparent;
+        color: #362204;
+        /* height: 200px; */
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+        display: block;
+    }
+
+    main {
+        flex: 1 0 auto;
+        margin: auto;
+        /* padding: 0 32px; */
+        width: 100%;
+        height: 5258.78px;
+    }
+    footer {
+        background-color: #6d1306;
+        color: white;
+        font-family: Founders-Regular;
+        padding: 45px 32px;
+    }
+    .nav {
+        width: 80%;
+        height: 70px;
+        /* background: yellow; */
+        margin-top: 34px;
+        display: block;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+   
+    .inner {
+        width: 100%;
+        height: 10px;
+        background: black;
+    }
+    header img {
+        left: 50%;
+        margin-block-start: 25px;
+        position: absolute;
+        top: 34px;
+        transform: translateX(-50%);
+    }
+    .left_menu {
+        float: left;
+        display: flex;
+    }
+    .left_menu li {
+        display: inline-block;
+        /* background: green; */
+        width: 90px;
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .right_menu li {
+        display: inline-block;
+        /* background: green; */
+        width: 120px;
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .left_menu li a {
+        text-decoration: none;
+        color: #362204;
+    }
+    .right_menu li a {
+        text-decoration: none;
+        color: #362204;
+    }
+    .left_menu li a:hover {
+    color: pink;
+    }
+    .right_menu li a:hover {
+    color: pink;
+    }
+    
+    .right_menu {
+        float: right;
+        display: flex;
+    }
+    .video {
+        box-sizing: border-box;
+    }
+    .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 텍스트를 정확히 중앙에 위치시킴 */
+    color: white; /* 텍스트 색상 */
+    font-size: 4rem; /* 글씨 크기 */
+    font-weight: bold; /* 글씨 두께 */
+    text-align: center; /* 텍스트 정렬 */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 글씨에 그림자 효과 추가 */
+}
+.highlight__text {
+    /* display: inline-block; */
+    margin: 0 auto;
+    /* padding-inline-end: 16px; */
+    /* padding-inline-start: 16px; */
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    /* background: yellow; */
+}
+
+.picture img {
+    display: flex;
+    /* justify-content: center; */
+    margin: auto;
+    }
+</style>
+<body>   
+    <header>
+        <img src="https://www.sartoricheese.com/img/ui/logo.svg" alt="">
+        <nav class="nav">
+            <div class="left_menu">
+                <ul>
+                    <li><a href="#">Our Cheese</a></li>
+                    <li><a href="#">Pairing</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Our Stroya</a></li>
+
+                </ul>
+            </div>
+            <div class="right_menu">
+                <ul>
+                    <li><a href="#">News & Articles</a></li>
+                    <li><a href="#">Where to Buy</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <video class="video" autoplay loop muted playsinline><source src="https://a.storyblok.com/f/136139/x/a5dda4abb4/home-hero-loop_updated_03.mp4"></video>
+            <div class="overlay-text">
+                Pairs Well.
+            </div>
+        </div>
+        <div class="highlight" style="--bg-image: url(https://a.storyblok.com/f/136139/1284x588/af6a52f137/white-background.png/m//1440x580);">
+            <div class="highlight__text">
+                <h2>Handcrafted since 1939.</h2>
+                <p>At Sartori, our family has cultivated artisanal cheese from Wisconsin farms for over four generations, and we’re just getting started.</p>
+            </div>
+            <div style="clear: both;">
+            </div>
+            <div class="picture">
+                <img src="https://a.storyblok.com/f/136139/4480x4382/bc6f30ae21/bellavitano-end-slate.jpg/m//1220x0" alt="BellaVitano Assortment of Cheese Wedges and Pairings">
+            </div>
+            <!-- 스크롤 영역 -->
+            <div class="spilt-scroll">
+                <div class="split-scroll__scrollable">
+                    <div class="split-scroll__column">
+                        <div class="split-scroll__text">
+                            <p class="eyebrow"> Introducing…</p>
+                            <div>
+                                <h2>Two New Cheddars</h2>
+                                <p><span style="color:rgb(0, 0, 0)">Drumroll, please for our NEW Sriracha and Italian Herb Cheddars! Whether you’re looking to turn up the heat or enjoy every herbaceous note, these two flavorful cheddars will make your tastebuds sing.</span></p>
+                            </div>
+                            <div class="text-media__ctas">
+                                <a href="/our-cheese/cheddar/" class="cta-link" aria-label="Learn More About Our NEW Sriracha and Italian Herb Cheddars">Learn More</a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>
